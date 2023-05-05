@@ -12,7 +12,7 @@ const FinalScreen = () => {
     const handleBackToSettings = () => {
         dispatch(handleScoreChange(0))
         dispatch(handleAmountChange(50))
-        navigate("/trivialquiz")
+        navigate("/")
     }
 
     return (
