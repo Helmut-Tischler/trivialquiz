@@ -42,6 +42,7 @@ const Settings = () => {
         navigate("/questions")
     }
 
+    //console.log(response)
     if (response) {
         return (
             <form onSubmit={handleSubmit}>

@@ -7,13 +7,13 @@ const useAxios = ({ url }) => {
     const [response, setResponse] = useState()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(true)
+    console.log(url)
 
     useEffect(() => {
         try {
             const fetchData = async () => {
                 const response = await axios.get(url)
                 setResponse(response.data)
-                console.log(response.data)
             }
             fetchData()
         } catch (error) {
@@ -24,7 +24,6 @@ const useAxios = ({ url }) => {
 
     }, [url])
 
-    console.log("Ich bin nach dem UseEffekt: ", response)
     return { response, error, loading }
 
 }
