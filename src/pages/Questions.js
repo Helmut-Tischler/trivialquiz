@@ -67,7 +67,7 @@ const Questions = () => {
         if (questionIndex + 1 < response.results.length) {
             setQuestionIndex(questionIndex + 1)
         } else {
-            navigate("/score")
+            navigate("./score")
         }
     }
 

@@ -39,7 +39,7 @@ const Settings = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        navigate("/questions")
+        navigate("./questions")
     }
 
     //console.log(response)
