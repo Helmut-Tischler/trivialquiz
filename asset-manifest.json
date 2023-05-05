@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/trivialquiz/static/js/main.a623afcb.js",
+    "index.html": "/trivialquiz/index.html",
+    "main.a623afcb.js.map": "/trivialquiz/static/js/main.a623afcb.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a623afcb.js"
+  ]
+}
