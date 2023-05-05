@@ -15,6 +15,6 @@ root.render(
                 </Provider>} />
             </Routes>
         </HashRouter>
-    </React.StrictMode>
-
+    </React.StrictMode>,
+    document.getElementById("root")
 )
