@@ -18,7 +18,7 @@ const FinalScreen = () => {
     return (
         <Box mt={2}>
             <Typography variant="h3" fontWeight="bold" mb={3}>Final Score {score}</Typography>
-            <Button onClick={handleBackToSettings} variant="outlined">Next Play</Button>
+            <Button onClick={handleBackToSettings} variant="outlined">Next Quiz</Button>
         </Box>
     )
 }
