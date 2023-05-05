@@ -58,7 +58,11 @@ const Settings = () => {
             </form>
         )
     } else {
-        return <div />
+        return (
+            <Box mt={20}>
+                <CircularProgress />
+            </Box>
+        )
     }
 }
 

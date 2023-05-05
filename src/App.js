@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Settings from './pages/Settings'
 import Questions from './pages/Questions'
 import FinalScreen from './pages/FinalScreen'
-import { Container, Box, Typography } from '@mui/material';
+import { Container, Box, Typography } from '@mui/material'
 
 function App() {
   return (
@@ -12,15 +12,15 @@ function App() {
           <Typography variant="h1">Trivial Quiz</Typography>
           <Routes>
             <Route path="/trivialquiz" exact element={
-              <Settings />
+              <><Settings /></>
             }
             />
             <Route path="/questions" element={
-              <Questions />
+              <><Questions /></>
             }
             />
             <Route path="/score" element={
-              <FinalScreen />
+              <><FinalScreen /></>
             }
             />
           </Routes>
