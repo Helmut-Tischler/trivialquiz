@@ -11,16 +11,16 @@ function App() {
         <Box textAlign="center" mt={5}>
           <Typography variant="h1">Trivial Quiz</Typography>
           <Routes>
-            <Route path="/" exact element={
-              <><Settings /></>
+            <Route path="/trivialquiz" exact element={
+              <Settings />
             }
             />
             <Route path="/questions" element={
-              <><Questions /></>
+              <Questions />
             }
             />
             <Route path="/score" element={
-              <><FinalScreen /></>
+              <FinalScreen />
             }
             />
           </Routes>
