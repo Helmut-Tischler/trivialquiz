@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/trivialquiz/static/js/main.5b3590b3.js",
-    "index.html": "/trivialquiz/index.html",
-    "main.5b3590b3.js.map": "/trivialquiz/static/js/main.5b3590b3.js.map"
+    "main.js": "/trivialquiz/settings/static/js/main.5b3590b3.js",
+    "index.html": "/trivialquiz/settings/index.html",
+    "main.5b3590b3.js.map": "/trivialquiz/settings/static/js/main.5b3590b3.js.map"
   },
   "entrypoints": [
     "static/js/main.5b3590b3.js"
