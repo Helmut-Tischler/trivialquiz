@@ -1,32 +1,33 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Settings from './pages/Settings'
 import Questions from './pages/Questions'
 import FinalScreen from './pages/FinalScreen'
 import { Container, Box, Typography } from '@mui/material'
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Settings />
+  },
+  {
+    path: '/questions',
+    element: <Questions />
+  },
+  {
+    path: '/score',
+    element: <FinalScreen />
+  },
+
+])
+
 function App() {
   return (
-    <Router>
-      <Container maxWidth="sm">
-        <Box textAlign="center" mt={5}>
-          <Typography variant="h1">Trivial Quiz</Typography>
-          <Routes>
-            <Route path="/" exact element={
-              <><Settings /></>
-            }
-            />
-            <Route path="/questions" element={
-              <><Questions /></>
-            }
-            />
-            <Route path="/score" element={
-              <><FinalScreen /></>
-            }
-            />
-          </Routes>
-        </Box>
-      </Container>
-    </Router>
+    <Container maxWidth="sm">
+      <Box textAlign="center" mt={5}>
+        <Typography variant="h1">Trivial Quiz</Typography>
+        <RouterProvider router={router} />
+      </Box>
+    </Container>
   )
 }
 
