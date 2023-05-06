@@ -6,7 +6,7 @@ import { Container, Box, Typography } from '@mui/material'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/trivialquiz',
     element: <Settings />
   },
   {
